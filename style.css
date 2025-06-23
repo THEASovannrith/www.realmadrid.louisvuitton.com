@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: black;
+  --second-color: rgb(95, 94, 94);
+  --third-color: gray;
+}
+:root {
+  --primary-font-size: 1rem;
+  --second-font-size: 0.8rem;
+  --third-font-size: 0.5rem;
+}
+
+@font-face {
+  font-family: lvfont;
+  src: url(./LVFont/Intrepid.ttf);
+}
+
+/* website bar */
+.website-bar {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: transparent;
+}
+
+/* If you want the child to change when parent is hovered, use this: */
+/* If you want the child to change when parent is hovered, use this: */
+.group-hover:hover > * {
+  color: black !important;
+  background-color: white !important;
+  transition: 0.5s;
+}
+.pointer {
+  cursor: pointer;
+}
+
+.menu-search-btn,
+.lv-logo-bar,
+.call-heart-user-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+}
+.menu-search-btn {
+  /* background-color: aqua; */
+  width: 20%;
+  position: relative;
+}
+.pdl-menu,
+.pdl-search,
+.pdl-search-text {
+  padding-left: 10px;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.lv-logo-bar {
+  /* background-color: aquamarine; */
+  width: 70%;
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.call-heart-user-btn {
+  /* background-color: antiquewhite; */
+  width: 20%;
+  position: relative;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+.heart,
+.user,
+.shopping,
+.call {
+  padding: 0px 10px 0px 10px;
+}
+.lvfont {
+  font-family: lvfont;
+}
+
+/* PHONE */
+
+@media (max-width: 768px) {
+  .menu-search-btn,
+  .lv-logo-bar,
+  .call-heart-user-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+  .pdl-menu,
+  .pdl-search-text,
+  .call,
+  .heart {
+    display: none;
+  }
+  .far-bar-btn,
+  .pdl-search-btn {
+    padding: 0px 0px 0px 5px;
+  }
+  .menu-search-btn {
+    margin-left: 0;
+  }
+  .lvfont {
+    font-size: 1.1rem;
+  }
+}
+
+/* Header or Main Pic */
+.pic-1 {
+  width: 100%;
+  height: 855px; /* Set desired visible height */
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  position: relative;
+}
+
+.sub-txt {
+  position: absolute;
+  top: 715px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  letter-spacing: 1px;
+}
+.sub-1 {
+  font-size: 0.7rem;
+}
+
+/* body */
+.lvlogo-real {
+  width: 150px;
+}
+.lv-real {
+  position: relative;
+  /* top: 50px; */
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+.object-fit-contain {
+  width: 100%;
+}
+
+/* footer */
+
+/* General Body Styles (for context, you might already have these) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* A common sans-serif font */
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* Footer Specific Styles */
+.lv-footer {
+  background-color: #fff; /* White background as seen in the image */
+  padding: 40px 0; /* Vertical padding */
+  border-top: 1px solid #e0e0e0; /* Subtle top border */
+  font-size: 14px;
+  color: #555;
+}
+
+.lv-footer-content-wrapper {
+  max-width: 1200px; /* Adjust based on your site's max width */
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px; /* Horizontal padding for smaller screens */
+}
+
+.lv-footer-top {
+  border-bottom: 1px solid #e0e0e0; /* Separator line */
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.lv-footer-nav {
+  display: flex;
+  justify-content: space-between; /* Distribute columns evenly */
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  gap: 30px; /* Space between columns */
+}
+
+.lv-footer-column {
+  flex: 1; /* Allows columns to grow and shrink */
+  min-width: 180px; /* Minimum width for each column before wrapping */
+}
+
+.lv-footer-column h3 {
+  font-size: 13px; /* Slightly smaller for headings */
+  font-weight: bold;
+  color: #000; /* Black color for headings */
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lv-footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lv-footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.lv-footer-column ul li a {
+  text-decoration: none;
+  color: #555; /* Link color */
+  font-size: 13px; /* Smaller font for links */
+  transition: color 0.2s ease-in-out;
+}
+
+.lv-footer-column ul li a:hover {
+  color: #000; /* Darker on hover */
+}
+
+/* Specific styling for the 'Connect' column's first link */
+.lv-footer-column-connect li:first-child a {
+  line-height: 1.4; /* Adjust line height for better readability of the longer text */
+}
+
+.lv-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px; /* Space before the logo */
+}
+
+.lv-footer-ship-to {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between text, flag, and country name */
+  font-size: 13px;
+  color: #555;
+}
+.txt-spac {
+  letter-spacing: 2px;
+}
+.link {
+  color: var(--primary-color);
+  text-underline-offset: 4px; /* Increase this value for more distance */
+}
+.ship {
+  font-size: smaller;
+}
+.pad-l {
+  position: relative;
+  padding-left: 50px;
+}
+.underline :hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
