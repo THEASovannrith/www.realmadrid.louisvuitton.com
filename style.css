@@ -14,6 +14,16 @@
   --third-font-size: 0.5rem;
 }
 
+.txt-primary {
+  color: var(--primary-color);
+}
+.txt-second {
+  color: var(--second-color);
+}
+.txt-third {
+  color: var(--third-color);
+}
+
 @font-face {
   font-family: lvfont;
   src: url(./LVFont/Intrepid.ttf);
@@ -51,7 +61,7 @@
 }
 .menu-search-btn {
   /* background-color: aqua; */
-  width: 30%;
+  width: 25%;
   position: relative;
 }
 .pdl-menu,
@@ -64,7 +74,7 @@
 
 .lv-logo-bar {
   /* background-color: aquamarine; */
-  width: 70%;
+  width: 60%;
   position: relative;
   font-size: 1.8rem;
   font-weight: 600;
@@ -73,7 +83,7 @@
 
 .call-heart-user-btn {
   /* background-color: antiquewhite; */
-  width: 30%;
+  width: 25%;
   position: relative;
   font-weight: 200;
   font-size: 0.9rem;
